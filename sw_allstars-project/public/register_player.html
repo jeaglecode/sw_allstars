@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--favicon-->
+    <link rel="icon" href="images/favicon.ico" />
+    <!--main style sheet-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/register_player.css">
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Webpage Title-->
+    <title>SouthWest AllStars</title>
+</head>
+
+<body>
+    <!--start of navbar-->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top nav_background">
+        <!--navbrand logo-->
+        <a class="navbar-brand text-white font-weight-bold" href="index.html">
+            <img class="logoHeight" src="images/nav_logo.svg" alt="">SouthWest AllStars
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <!-- menu links-->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link nav_a font-weight-bold" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active"><a class="nav-link nav_selected font-weight-bold">Register</a>
+                </li>
+                <li class="nav-item"><a class="nav-link nav_a font-weight-bold" href="teams.html">Manage Team</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--end of navbar -->
+
+    <!-- Start Home Landing -->
+    <main>
+        <section class="main_margin">
+            <div class="container-fluid">
+
+                <!-- register header -->
+                <header>
+                    <div class="row justify-content-center">
+                        <div class="text-center font-weight-bold"><span class="banner_text">Register</span></div>
+                    </div>
+                </header>
+            </div>
+
+            <!-- player sign up form header -->
+            <div class="container" id="registerPlayer">
+                <div class="intro">
+                    <div class="row justify-content-center">
+                        <h4 class="font-weight-bold">Player SignUp</h4>
+                    </div>
+
+                    <!-- add a player form -->
+                    <form action="#" id="playerForm">
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="teamCode" class="form-label">Team Code:</label>
+                                    <input type="text" class="form-control" id="teamCode" name="teamCode" autofocus>
+                                </div>
+                            </div>
+
+
+                            <!-- fields to display team access code when found -->
+                            <div class="col-md-6">
+                                <div class="form-group text-center font-weight-bold m-0" id="teamField"></div>
+
+                                <div class="row justify-content-center">
+                                    <div class="text-center font-weight-bold" id="managerCodeField"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- dont have a code checkbox -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="noCode" id="noCode">
+                                    <label class="form-check-label" for="noCode">Don't have a Code?</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- pick by team dropdown to open with code checkbox is true -->
+                        <div class="row mt-3" id="pickTeam">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="teams">Pick by Team</label>
+                                    <select name="teams" class="form-control" id="teams">
+                                        <option value="-1">Select One...</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- name field -->
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="playerName" class="form-label">Players Name:</label>
+                                    <input type="text" class="form-control" id="playerName" name="playerName" required>
+                                </div>
+                            </div>
+
+                            <!-- Guardian field -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="guardianName" class="form-label">Guardian Name:</label>
+                                    <input type="text" class="form-control" id="guardianName" name="guardianName"
+                                        required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- age field -->
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="playerAge" class="form-label">Players Age:</label>
+                                    <input type="number" class="form-control" id="playerAge" name="playerAge" required>
+                                </div>
+                            </div>
+
+                            <!-- email field -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="playerEmail" class="form-label">Email:</label>
+                                    <input type="email" class="form-control" id="playerEmail" name="playerEmail"
+                                        required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- phone field-->
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="playerPhone" class="form-label">Phone: <span
+                                            class="font-weight-light font-italic">ex. 555-555-5555</span></label>
+                                    <input type="tel" class="form-control" id="playerPhone" name="playerPhone" required
+                                        maxlength="12" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- button field -->
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <input type="submit" id="submitPlayerBtn"
+                                        class="btn btnText btnBackGround form-control" value="Add Player">
+                                </div>
+                            </div>
+
+                            <!-- clear button -->
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <input type="reset" id="resetPlayerBtn"
+                                        class="btn btnText btnBackGround form-control" value="Start Over">
+                                </div>
+                            </div>
+
+                            <!-- back button -->
+                            <div class="col-md-2 offset-md-6">
+                                <button type="button" class="btn btnTextBlue btnBackGroundBlue"
+                                    id="backPlayerBtn">Back</button>
+                            </div>
+                        </div>
+
+                        <!-- message handling field -->
+                        <div class="row justify-content-center">
+                            <div class="col-md-12 text-center" id="messageDiv"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer and socail media icons-->
+    <footer class="py-2">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Social Icons  -->
+                <div class="col-4 somed">
+                    <a href="https://www.facebook.com" target="_blank"> <i class="fa fa-facebook"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </div>
+                <!-- About Us-->
+                <div class="col-4 text-center about_us_pad">
+                    <a href="index.html" class="about_us"><span>SouthWest AllStars</span></a>
+                </div>
+                <!-- Copyright-->
+                <div class="col-4 text-right copy_right">
+                    <span>&copy; SouthWest AllStars</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
+
+    <!-- Bootstrap CDN files-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="scripts/register_player.js"></script>
+</body>
+
+</html>

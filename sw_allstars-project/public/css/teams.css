@@ -1,0 +1,5 @@
+/* change color of error message */
+.errorMessage {
+    color: red;
+    font-weight: bolder;
+}

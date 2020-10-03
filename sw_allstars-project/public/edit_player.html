@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--favicon-->
+    <link rel="icon" href="images/favicon.ico" />
+    <!--main style sheet-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/edit_player.css">
+
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Webpage Title-->
+    <title>SouthWest AllStars</title>
+</head>
+
+<body>
+    <!--start of navbar-->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top nav_background">
+        <!--navbrand logo-->
+        <a class="navbar-brand text-white font-weight-bold" href="index.html">
+            <img class="logoHeight" src="images/nav_logo.svg" alt="">SouthWest AllStars
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <!-- menu links-->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link nav_a font-weight-bold" href="index.html">Home</a>
+                </li>
+                <li class="nav-item"><a class="nav-link nav_a font-weight-bold" href="register.html">Register</a>
+                </li>
+                <li class="nav-item active"><a class="nav-link nav_selected font-weight-bold" href="teams.html">Back to
+                        Search</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--end of navbar -->
+
+
+    <main>
+        <section class="main_margin">
+            <div class="container-fluid">
+
+                <!-- header for page -->
+                <header>
+                    <div class="row justify-content-center">
+                        <div class="text-center font-weight-bold"><span class="banner_text">Edit Player</span></div>
+                    </div>
+                </header>
+            </div>
+
+            <div class="container">
+                <div class="intro">
+
+                    <!-- player that will be edited -->
+                    <div class="row justify-content-center">
+                        <h4 class="font-weight-bold editName">Player: <span id="editName"></span></h4>
+                    </div>
+
+                    <!-- team and division info -->
+                    <div class="row">
+                        <div class="col-md-2 textField">Team:</div>
+                        <div class="col-md-6 textFieldInside" id="playersTeam"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2 textField">Division:</div>
+                        <div class="col-md-6 textFieldInside" id="playersDivision"></div>
+                    </div>
+
+                    <!-- edit player form -->
+                    <form action="#" id="editPlayerForm">
+
+                        <!-- name field -->
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="playerName" class="form-label">Players Name:</label>
+                                    <input type="text" class="form-control" id="playerName" name="playerName" required>
+                                </div>
+                            </div>
+
+                            <!-- Guardian field -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="guardianName" class="form-label">Guardian Name:</label>
+                                    <input type="text" class="form-control" id="guardianName" name="guardianName"
+                                        required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- age field -->
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="playerAge" class="form-label">Players Age:</label>
+                                    <input type="number" class="form-control" id="playerAge" name="playerAge" required>
+                                </div>
+                            </div>
+
+                            <!-- email field -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="playerEmail" class="form-label">Email:</label>
+                                    <input type="email" class="form-control" id="playerEmail" name="playerEmail"
+                                        required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- phone field -->
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="playerPhone" class="form-label">Phone: <span
+                                            class="font-weight-light font-italic">ex. 555-555-5555</span></label>
+                                    <input type="tel" class="form-control" id="playerPhone" name="playerPhone" required
+                                        maxlength="12" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- button fields -->
+                        <div class="row">
+                            <div class="col-md-3">
+                                <!-- submit button -->
+                                <div class="form-group">
+                                    <input type="submit" id="submitPlayerBtn"
+                                        class="btn btnTextStyle btnBackGround form-control" value="Save">
+                                </div>
+                            </div>
+
+                            <!-- discard button -->
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <input type="button" id="resetBtn"
+                                        class="btn btnTextStyle btnBackGround form-control" value="Discard Changes">
+                                </div>
+                            </div>
+
+                            <!-- back button -->
+                            <div class="col-md-3 offset-md-3">
+                                <button type="button" class="btn btnTextBlue btnBackGroundBlue"
+                                    id="backEditBtn">Back</button>
+                            </div>
+                        </div>
+
+                        <!-- message handling field -->
+                        <div class="row justify-content-center">
+                            <div class="col-md-12 text-center font-weight-bold" id="messageDiv"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer and socail media icons-->
+    <footer class="py-2">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Social Icons  -->
+                <div class="col-4 somed">
+                    <a href="https://www.facebook.com" target="_blank"> <i class="fa fa-facebook"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </div>
+                <!-- About Us-->
+                <div class="col-4 text-center about_us_pad">
+                    <a href="index.html" class="about_us"><span>SouthWest AllStars</span></a>
+                </div>
+                <!-- Copyright-->
+                <div class="col-4 text-right copy_right">
+                    <span>&copy; SouthWest AllStars</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
+
+    <!-- Bootstrap CDN files-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="scripts/edit_player.js"></script>
+</body>
+
+</html>

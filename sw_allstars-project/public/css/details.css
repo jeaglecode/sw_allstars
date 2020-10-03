@@ -1,0 +1,106 @@
+/* setting team name color to blue */
+
+.teamName {
+   font-family: Helvetica Neue, helvetica, arial, sans-serif;
+   color: #1c2058;
+   font-size: 20pt;
+}
+
+.textField {
+   color: #1c2058;
+   font-weight: bold;
+   font-size: 12pt;
+}
+
+.textFieldInside {
+   font-family: Helvetica Neue, helvetica, arial, sans-serif;
+   font-size: 12pt;
+   font-weight: normal;
+}
+
+/* button style */
+
+button.btnTextStyle {
+   color: white!important;
+}
+
+button.btnTextStyle:hover {
+   color: #1c2058!important;
+   text-decoration: underline!important;
+}
+
+#banner {
+   margin-top: 20px;
+   font-family: Helvetica Neue, helvetica, arial, sans-serif;
+   font-size: 20pt;
+   padding: .5em;
+   background-color: #1c2058;
+   border-radius: .3em;
+}
+
+.tableFont {
+   color: #1c2058;
+   font-family: Helvetica Neue, helvetica, arial, sans-serif;
+   font-size: 12pt;
+}
+
+.editBtnBackGround {
+   background-color: #1c2058;
+   padding: 1px;
+   display: inline-block;
+   /* border-radius: 3em; */
+   width: 100%;
+   text-align: center;
+   margin: 1px;
+}
+
+a.editBtnTextStyle:hover {
+   color: gray!important;
+   text-decoration: none!important;
+}
+
+a.editBtnTextStyle {
+   color: white!important;
+}
+
+.deleteBtnBackGround {
+   background-color: #cd163f;
+   padding: 1px;
+   display: inline-block;
+   /* border-radius: 3em; */
+   width: 100%;
+   text-align: center;
+   margin: 1px;
+}
+
+a.deleteBtnTextStyle {
+   color: white!important;
+}
+
+a.deleteBtnTextStyle:hover {
+   color: #1c2058!important;
+   text-decoration: none!important;
+}
+
+.btnBlueBackGround {
+   background-color: #1c2058;
+   padding: 5px;
+   display: inline-block;
+   /* border-radius: 3em; */
+   width: 100%;
+   text-align: center;
+   margin: 5px;
+}
+
+.btnBlueTextStyle {
+   color: white!important;
+}
+
+.btnBlueTextStyle:hover {
+   color: gray!important;
+   text-decoration: underline!important;
+}
+
+.fontLarge {
+   font-size: 1.2em;
+}

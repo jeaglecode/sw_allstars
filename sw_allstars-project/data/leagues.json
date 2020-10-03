@@ -1,0 +1,22 @@
+[
+	{
+		"Name": "Tee Ball",
+		"Code": "D1",
+		"Description": "Division for players ages 4-6 years old"
+	},
+	{
+		"Name": "Minors",
+		"Code": "D2",
+		"Description": "Division for players ages 7-9 years old"
+    },
+    {
+		"Name": "Majors",
+		"Code": "D3",
+		"Description": "Division for players ages 10-12 years old"
+	},
+	{
+		"Name": "Juniors",
+		"Code": "D4",
+		"Description": "Division for players ages 12-14 years old"
+	}
+]

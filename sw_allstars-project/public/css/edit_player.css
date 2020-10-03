@@ -1,0 +1,48 @@
+/* set player name in blue */
+
+.editName {
+    font-family: Helvetica Neue, helvetica, arial, sans-serif;
+    color: #1c2058;
+    font-size: 20pt;
+}
+
+/* setting text field style */
+
+.textField {
+    color: #1c2058;
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+.textFieldInside {
+    font-family: Helvetica Neue, helvetica, arial, sans-serif;
+    font-size: 12pt;
+    font-weight: normal;
+}
+
+.btnTextStyle {
+    color: white!important;
+}
+
+.btnTextStyle:hover {
+    color: #1c2058!important;
+    text-decoration: none!important;
+}
+
+.btnBackGroundBlue {
+    background-color: #1c2058;
+    padding: 5px;
+    display: inline-block;
+    /* border-radius: 3em; */
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+}
+
+button.btnTextBlue {
+    color: white!important;
+}
+
+button.btnTextBlue:hover {
+    color: gray!important;
+}

@@ -1,0 +1,45 @@
+/* button text colot */
+
+.btnText {
+    color: white!important;
+}
+
+/* on hover remove underline */
+
+.btnText:hover {
+    color: #1c2058!important;
+    text-decoration: underline!important;
+}
+
+/* register team hidden */
+
+#registerTeam {
+    display: none;
+}
+
+/* blue button style */
+
+.btnBackGroundBlue {
+    background-color: #1c2058;
+    padding: 5px;
+    display: inline-block;
+    /* border-radius: 3em; */
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+}
+
+.btnTextBlue {
+    color: white!important;
+}
+
+.btnTextBlue:hover {
+    color: gray!important;
+    text-decoration: underline!important;
+}
+
+/* access code field hide */
+
+#codeWrapper {
+    display: none;
+}

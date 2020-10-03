@@ -1,0 +1,27 @@
+/* setting button style */
+
+.btnTextStyle {
+    color: white!important;
+}
+
+.btnBackGroundBlue {
+    background-color: #1c2058;
+    padding: 5px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+}
+
+button.btnTextBlue {
+    color: white!important;
+}
+
+button.btnTextBlue:hover {
+    color: gray!important;
+}
+
+.btnTextStyle:hover {
+    color: #1c2058!important;
+    text-decoration: none!important;
+}
